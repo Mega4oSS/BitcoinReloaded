@@ -1,0 +1,98 @@
+name: BitcoinReloaded
+version: '2.5'
+authors: [Donut, Mega4oSS]
+main: us.donut.bitcoin.Bitcoin
+website: https://www.spigotmc.org/resources/bitcoin.52085/
+depend: [Vault]
+softdepend: [PlayerPoints, PlaceholderAPI, MVdWPlaceholderAPI]
+api-version: '1.20'
+commands:
+  bitcoin:
+    description: Opens bitcoin menu
+    usage: /bitcoin
+    aliases: [btc]
+permissions:
+  bitcoin.*:
+    description: Gives access to all bitcoin commands
+    default: op
+    children:
+      bitcoin.main: true
+      bitcoin.help: true
+      bitcoin.value: true
+      bitcoin.bank: true
+      bitcoin.tax: true
+      bitcoin.mine: true
+      bitcoin.sell: true
+      bitcoin.buy: true
+      bitcoin.transfer: true
+      bitcoin.give: true
+      bitcoin.remove: true
+      bitcoin.set: true
+      bitcoin.reload: true
+      bitcoin.stats: true
+      bitcoin.top: true
+      bitcoin.circulation: true
+      bitcoin.computer: true
+      bitcoin.reset: true
+      bitcoin.gui.transfer: true
+      bitcoin.gui.buy: true
+      bitcoin.gui.sell: true
+      bitcoin.gui.mine: true
+      bitcoin.gui.help: true
+      bitcoin.gui.blackmarket: true
+      bitcoin.blackmarket: true
+      bitcoin.blackmarket.edit: true
+  bitcoin.main:
+    description: Allows /bitcoin
+    default: true
+  bitcoin.help:
+    description: Allows /bitcoin help
+    default: true
+  bitcoin.value:
+    description: Allows /bitcoin value
+  bitcoin.bank:
+    description: Allows /bitcoin bank
+  bitcoin.tax:
+    description: Allows /bitcoin tax
+  bitcoin.mine:
+    description: Allows /bitcoin mine
+  bitcoin.sell:
+    description: Allows /bitcoin sell
+  bitcoin.buy:
+    description: Allows /bitcoin buy
+  bitcoin.transfer:
+    description: Allows /bitcoin transfer
+  bitcoin.give:
+    description: Allows /bitcoin give
+  bitcoin.remove:
+    description: Allows /bitcoin remove
+  bitcoin.set:
+    description: Allows /bitcoin set
+  bitcoin.reload:
+    description: Allows /bitcoin reload
+  bitcoin.stats:
+    description: Allows /bitcoin stats
+  bitcoin.top:
+    description: Allows /bitcoin top
+  bitcoin.circulation:
+    description: Allows /bitcoin circulation
+  bitcoin.computer:
+    description: Allows /bitcoin computer
+  bitcoin.reset:
+    description: Allows /bitcoin reset
+  bitcoin.gui.transfer:
+    description: Allows transferring from GUI
+  bitcoin.gui.buy:
+    description: Allows buying from GUI
+  bitcoin.gui.sell:
+    description: Allows selling from GUI
+  bitcoin.gui.mine:
+    description: Allows mining from GUI
+  bitcoin.blackmarket:
+    description: Allows /bitcoin blackmarket
+  bitcoin.blackmarket.edit:
+    description: Allows editing of black market
+  bitcoin.gui.blackmarket:
+    description: Allows black market item in GUI
+  bitcoin.gui.help:
+    description: Allows help item in GUI
